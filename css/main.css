@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+KR&display=swap');
+@font-face {
+ font-family: 'handel gothic';
+ src: url(../font/handel gothic.ttf) format('truetype');
+}
+
+/*reset*/
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+
+
+/*Layout*/
+body {font-family: 'Noto Sans KR', sans-serif; font-size: 14px; color: #333; }
+.wrap {overflow: hidden}
+.en {font-family:'handel gothic',sans-serif;}
+.en_s {font-family: 'Dancing Script', cursive;}
+
+
+/*header*/
+.innerHeader{
+    max-width: 1720px;
+    height: 110px;
+    line-height: 110px;
+    margin: auto;
+}
+.innerHeader .logo{
+    float: left;
+}
+.innerHeader .logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*gnb+sns*/
+.innerHeader .mainMenu{
+    float: right;
+    overflow: hidden;
+    position: relative;
+}
+span.bar{
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    width: 0;
+    height: 3px;
+    background: #6e6e6e;
+    transition: all 0.4s; 
+}
+/*gnb*/
+.innerHeader .mainMenu .gnb{
+    float: left;
+}
+.innerHeader .mainMenu .gnb li{
+    float: left;
+    margin: 0 20px;
+}
+.innerHeader .mainMenu .gnb li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #555;
+}
+/*sns*/
+.innerHeader .mainMenu .sns{
+    float: left;
+    margin-left: 300px;
+}
+.innerHeader .mainMenu .sns li{
+    float: left;
+}
+.innerHeader .mainMenu .sns li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
