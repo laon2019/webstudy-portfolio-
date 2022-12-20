@@ -82,8 +82,32 @@ span.bar{
     height: 100%;
     padding: 0 10px;
 }
+/*section.visual*/
+section.visual{
+    max-width: 1720px;
+    margin: auto;
+    overflow: hidden;
+}
+section.visual .mainImg{
+    float: left;
+    width: 50%;
+}
+section.visual .mainImg img{
+    width: 90%;
+}
+section.visual .mainTxt{
+    float: left;
+    width: 50%;
+    margin-top: 180px;
+}
 
 
+/*타이틀, 텍스트, 더보기 버튼 공통 클래스*/
+.tit{
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: normal;
+}
 
 
 
