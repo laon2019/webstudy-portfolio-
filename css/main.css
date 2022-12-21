@@ -68,6 +68,7 @@ span.bar{
     height: 100%;
     color: #555;
 }
+
 /*sns*/
 .innerHeader .mainMenu .sns{
     float: left;
@@ -82,6 +83,54 @@ span.bar{
     height: 100%;
     padding: 0 10px;
 }
+
+/*타이틀, 텍스트, 더보기 버튼 공통 클래스*/
+.tit{
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: normal;
+}
+.tit span{
+    display: block;
+}
+.tit span b{
+    font-weight: normal;
+}
+.tit span.en_s{
+    font-size: 22px;
+    font-weight: normal;
+}
+.txt p{
+    color: #888;
+    line-break: 1.6;
+    margin-bottom: 10px;
+}
+.txt p b{
+    font-weight: normal;
+}
+.moreBtn{
+    display: inline-block;
+    color: #333;
+    position: relative;
+    padding-left: 45px;
+    margin-top: 20px;
+    transform: skewX(-15deg) translateX(5px);
+    transition: all 0.15s;
+}
+.moreBtn::before{
+    content: '';
+    width: 42px;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    top: 54%;
+}
+.moreBtn:hover, .moreBtn:focus{
+    transform: skewX(0deg) translateX(0px);
+    font-weight: bold;
+}
+
 /*section.visual*/
 section.visual{
     max-width: 1720px;
@@ -100,13 +149,17 @@ section.visual .mainTxt{
     width: 50%;
     margin-top: 180px;
 }
-
-
-/*타이틀, 텍스트, 더보기 버튼 공통 클래스*/
-.tit{
-    font-size: 50px;
-    line-height: 1.2;
-    font-weight: normal;
+section.visual .mainTxt .tit{
+    font-size: 72px;
+}
+section.visual .mainTxt .tit span .en_s{
+    margin-bottom: 10px;
+}
+section.visual .mainTxt .tit .gray{
+    color: #ccc;
+}
+section.visual .mainTxt .txt{
+    padding: 50px 0px 0px 70px;
 }
 
 
