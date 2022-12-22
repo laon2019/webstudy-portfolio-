@@ -131,6 +131,20 @@ span.bar{
     font-weight: bold;
 }
 
+/*section안에 .inner(공통 넓이 가이드) .box(플루트)*/
+section .inner{
+    width: 1320px;
+    margin: auto;
+    overflow: hidden;
+}
+section .inner .box{
+    float: left;
+    width: 50%;
+}
+
+
+
+
 /*section.visual*/
 section.visual{
     max-width: 1720px;
@@ -162,21 +176,124 @@ section.visual .mainTxt .txt{
     padding: 50px 0px 0px 70px;
 }
 
+/*section.journal*/
 
+section.journal{
+    position: relative;
+    padding: 190px 0 120px;
+}
+section.journal .scroll{
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    font-size: 10px;
+    letter-spacing: 5px;
+    writing-mode: vertical-rl;
+    padding-top: 90px;
+}
+section.journal .scroll:before{
+    content: '';
+    position: absolute;
+    height: 75px;
+    width: 1px;
+    background: #333;
+    top: 0;
+    left: 6px;
+}
+section.journal .inner .box .img{
+    padding-top: 100px;
+}
+section.journal .inner .box .tit{
+    margin-bottom: 40px;
+}
+section.journal .inner .box ul{
+    border-top: 1px solid #a7a4a4;
+    padding-top: 40px;
+}
+section.journal .inner .box ul li{
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+section.journal .inner .box ul li h3{
+    float: left;
+    width: 22%;
+    font-size: 15px;
+    font-weight: bold;
+}
+section.journal .inner .box ul li p{
+    float: left;
+    width: 78%;
+    color: rgb(65, 62, 62);
+}
+section.journal .inner .box .moreBtn{
+    clear: both;/*위에요소가 float일 경우 clear:both를 해주는게 좋음!!!*/
+    margin-left: 22%;
+}
 
+/*section .service*/
+section.service{
+    padding: 190px 0;
+}
+section.service .scroll{
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    font-size: 10px;
+    letter-spacing: 5px;
+    
+   
+}
+section.service .inner .box .img{
+    margin-top: 60px;
+}
+section.service .inner .box.design{/*클래스가 두개인 경우 붙여써야함*/
+    width: 45%;
+    margin-top: -40%;
+    padding-top: 60px;
+    border-top: 1px solid #79dae9;
+}
+section.service .inner .box.design .tit{
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
 
+/*section.customer*/
+section.customer{
+    padding: 160px;
+    text-align: center;
+    background: url(../img/img_04.jpg) no-repeat center/cover;
+}
+section.customer .tit{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+section.customer .txt{
+    color: #777;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+/*section.team*/
+section.team{
+    padding: 190px 0;
+    position: relative;
+}
+section.team .inner .box.left{
+    text-align: right;
+    padding-right: 80px; /*패딩80px을 주면 오른쪽 박스가 밑으로내려감*/
+    box-sizing: border-box; /*이렇게 하면 패딩80이 50%안에서 적용*/
+}
+section.team .inner .box .tit{
+    margin-top: 40px;
+}
+section.team .inner .box .img{
+    margin-top: 100px;
+}
+section.team .inner .box .txt{
+    margin: 30px 0;
+}
 
 
 
