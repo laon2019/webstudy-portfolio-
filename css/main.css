@@ -327,10 +327,42 @@ footer .bottom ul li b:nth-child(1){
     color: #333;
 }
 
+/*circleBox SVG*/
+.circleBox .svgAni path{
+    fill: none;
+    stroke: #e4e4e4;
+    stroke-width: 25;
+    stroke-dasharray: 1564; /*js로 확인한 길이*/
+    stroke-dashoffset: 0;/*시작위치*/
+}
+section.journal .circleBox{
+    width: 700px;
+    position: absolute;
+    right: 13%;
+    top: 100px;
+    z-index: -1; /*뒤로 보내기*/
+}
+section.team .circleBox{
+    width: 700px;
+    position: absolute;
+    top: -50px;
+    left: 20%;
+    z-index: -1;
+}
 
-
-
-
+/*SVG 애니메이션*/
+.circleBox{
+    display: block;
+    transform: rotate(-90deg); /*-90도*/
+}
+.circleBox.motion .svgAni path{
+    animation-name: dash;
+    animation-duration: 1.5s; /*애니메이션이 진행되는 시간*/
+}
+@keyframes dash{
+    0% {stroke-dashoffset: 1564;}
+    100%{stroke-dashoffset: 0;}
+}
 
 
 

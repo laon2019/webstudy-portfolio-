@@ -9,3 +9,20 @@ $(function(){
         $('span.bar').css({'left':0, 'width':0, 'opacity':0});
     })
 });
+
+
+//circleBox SVG길이구하기
+$(function(){
+    $('.svgAni').find('path').each(function(i, path){
+        var length = path.getTotalLength();
+        //alert(length); 길이값 확인
+    });
+});
+
+//스크롤애니메이션
+$(function(){
+    $('.animate').scrolla({
+        mobile: true, //모바일버전시 활성화
+        once : true //스크롤시 딱 한번만 하고 싶을 땐 true ||  반복 : path
+    });
+});
