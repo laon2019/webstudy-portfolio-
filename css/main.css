@@ -566,3 +566,183 @@ section.service .img.motion::after{
     40%{opacity: 0; transform: translateY(-50%)scale(0.5);}
 }
 
+/*반응형*/
+/*pc*/
+@media screen and (max-width:1720px){ /*1720px~1401px사이*/
+    .innerHeader {max-width: 100%; 
+        padding: 0 30px; 
+        box-sizing: border-box;
+    }
+    .innerHeader .mainMenu .sns {
+        margin-left: 200px;
+    }
+    section.visual {
+        max-width: 100%; 
+        padding: 0 30px; 
+        box-sizing: border-box;
+    }
+    section.visual .mainTxt {
+        margin-top: 150px;
+    }
+    section.visual .mainTxt .tit {
+        font-size: 62px;
+    }    
+}
+
+/*1024 테블릿모드*/
+@media screen and (max-width:1400px){/*1400px~1024px사이*/
+    section.visual .mainTxt {
+        margin-top: 100px;
+    }
+    section.visual .mainTxt .tit {
+        font-size: 46px;
+    }
+    section.visual .mainTxt .txt{
+        padding: 20px 0px 0px 0px;
+    }
+    section .inner{
+        width: 100%; 
+        padding: 0 30px; 
+        box-sizing: border-box;
+    }
+    .img img {width:100%;}
+    /*section.journal{overflow: hidden;}*/
+    section.journal .scroll{
+        display: none;
+    }
+    section.journal .circleBox{ 
+        right: -10%; top:0;
+    }
+    section.journal .inner .box .img{
+        width: 90%;
+    }
+    section.customer {
+        padding: 160px 0;
+    }
+    footer {
+        width: 100%; 
+        padding: 0 30px; 
+        box-sizing: border-box;
+    }
+}
+/*1024 이하 테블릿*/
+@media screen and (max-width:1000px){
+    .innerHeader{
+        height: 80px;
+        line-height: 80px;
+    }
+    .innerHeader .mainMenu{ /*메인메뉴 없애기*/
+        width: 0;
+        height: 0;
+        opacity: 0;
+        display: none;
+    }
+    .menuOpen button.open{
+        position: absolute;
+        top: 0;
+        transform: none;
+        width: 70px;
+        height: 80px;
+        padding: 0;
+        line-height: 80px;
+    }
+    .menuOpen button.open::before{
+        display: none;/*hover삭제*/
+    }
+    section.visual .mainImg{
+        width: 100%;
+        float: none;
+    }
+    section.visual .mainImg img{
+        width: 100%;
+    }
+    section.visual .mainTxt{
+        width: 100%;
+        float: none;
+        margin-top: 50px;
+    }
+    section .inner .box{
+        float: none;
+        width: 100%;
+    }
+    section.journal{
+        padding: 80px 0;
+    }
+    section.journal .circleBox{
+        top: 200px;
+    }
+    section.journal .inner .box .img{
+        margin: 0 auto 50px;
+        padding-top: 0;
+        width: 80%;
+    }
+    section.srvice{
+        padding: 80px 0;
+    }
+    section.srvice .txt{
+        margin-top: 20px;
+    }
+    section.service .inner .box.design{
+        margin-top: 50px;
+        width: 100%;
+    }
+    section.service .inner .box .img{
+        margin: 50px auto 0;
+        width: 90%;
+    }
+    section.service .inner .box .img {
+        width: 70%; 
+    }
+    section.service .inner .box.design .img {
+        width: 70%; 
+        margin:50px 0 0;
+    }
+    section.service .img.motion:after {
+        background: #fff;
+    }
+    section.service .inner .box.design .tit {
+        font-size: 35px;
+    }
+    section.customer{
+        padding: 120px 0;
+    }
+    section.customer .tit {
+        font-size: 30px;
+    }
+    section.team{
+        padding: 80px 0; 
+        overflow: hidden
+    }
+    section.team .circleBox {
+        left: 15%;
+    }
+    section.team .inner .box.left {
+        padding-right: 0; 
+        overflow: hidden;
+    }
+    section.team .inner .box .img{
+        margin-top: 50px; 
+        width: 70%; 
+        float: right; 
+        clear: both;
+    } 
+    section.team .inner .box:nth-child(2) .img {
+        width: 100%; 
+        margin: 50px 0;
+    }
+    section.team .inner .box .tit {
+        margin-top: 0; 
+        clear: both;
+    }
+    section.team .inner .box.left .moreBtn {
+        float: right; 
+        margin-right: 5px;
+    }
+    footer .bottom ul li:nth-child(1) {
+        width: 100%; 
+        margin-bottom: 30px;
+    }
+    footer .bottom ul li {
+        width: 33.3333%;
+    }
+}
